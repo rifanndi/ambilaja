@@ -1,0 +1,47 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1vw; /* Menggunakan vw untuk padding agar responsif */
+  text-align: center;
+}
+
+.logo {
+  height: 6vw; /* Menggunakan vw untuk tinggi agar responsif */
+  padding: 1vw; /* Menggunakan vw untuk padding agar responsif */
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(
+    0 0 2vw #646cffaa
+  ); /* Menggunakan vw untuk efek drop-shadow agar responsif */
+}
+.logo.react:hover {
+  filter: drop-shadow(
+    0 0 2vw #61dafbaa
+  ); /* Menggunakan vw untuk efek drop-shadow agar responsif */
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 1vw; /* Menggunakan vw untuk padding agar responsif */
+}
+
+.read-the-docs {
+  font-size: 1.5vw; /* Menggunakan vw untuk ukuran font agar responsif */
+  color: #888;
+}
